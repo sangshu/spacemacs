@@ -67,7 +67,7 @@ values."
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(org-projectile)
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
    ;; `used-only' installs only explicitly used packages and uninstall any
@@ -329,6 +329,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (push '("melpa-stable" . "stable.melpa.org/packages/") configuration-layer--elpa-archives)
   (push '("ensime" . "melpa-stable") package-pinned-packages)
+  ;;(setq ensime-sem-high-faces
+    ;;    '(ensime-sem-high-enabled-p nil));; disable semantic highlighting))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
