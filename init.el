@@ -329,6 +329,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (push '("melpa-stable" . "stable.melpa.org/packages/") configuration-layer--elpa-archives)
   (push '("ensime" . "melpa-stable") package-pinned-packages)
+  ;;(setq ensime-sem-high-faces
+    ;;    '(ensime-sem-high-enabled-p nil));; disable semantic highlighting))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
